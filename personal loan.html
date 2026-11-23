@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Loan Application - Stanbic Bank</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="dlac.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Stanbic Bank Uganda</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="personal-loan.html">Personal Loan Application</a>
+        </nav>
+    </header>
+
+    <!-- Application Form -->
+    <main class="form-container">
+
+        <form action="#" method="post">
+
+            <fieldset>
+
+                <legend>Personal Loan Application</legend>
+
+                <!-- Title -->
+                <label for="title">Title</label>
+
+                <select id="title" name="title">
+                    <option value="">Select Title</option>
+                    <option>Mr</option>
+                    <option>Mrs</option>
+                    <option>Ms</option>
+                    <option>Dr</option>
+                </select>
+
+                <!-- First Name -->
+                <label for="firstname">First Name</label>
+
+                <input type="text" id="firstname"
+                       name="firstname" required>
+
+                <!-- Last Name -->
+                <label for="lastname">Last Name</label>
+
+                <input type="text" id="lastname"
+                       name="lastname" required>
+
+                <!-- Phone -->
+                <label for="phone">Phone</label>
+
+                <input type="tel" id="phone"
+                       name="phone" required>
+
+                <!-- Email -->
+                <label for="email">Email</label>
+
+                <input type="email" id="email"
+                       name="email">
+
+                <!-- District -->
+                <label for="district">District</label>
+
+                <select id="district" name="district">
+                    <option value="">Select District</option>
+                    <option>Kampala</option>
+                    <option>Wakiso</option>
+                    <option>Jinja</option>
+                    <option>Mbarara</option>
+                    <option>Gulu</option>
+                </select>
+
+                <!-- Monthly Salary -->
+                <label for="salary">Monthly Salary (UGX)</label>
+
+                <input type="number" id="salary"
+                       name="salary" min="300000">
+
+                <!-- Inline CSS for Eligibility Message -->
+                <p style="background:#EAF3DE; color:#27500A; padding:8px;">
+                    You appear eligible for this loan.
+                </p>
+
+                <!-- Loan Amount -->
+                <label for="amount">Loan Amount Requested (UGX)</label>
+
+                <input type="number" id="amount"
+                       name="amount">
+
+                <!-- Repayment Period -->
+                <label for="period">Repayment Period</label>
+
+                <select id="period" name="period">
+                    <option value="">Select Period</option>
+                    <option value="12">12 Months</option>
+                    <option value="24">24 Months</option>
+                    <option value="36">36 Months</option>
+                </select>
+
+                <!-- Loan Purpose -->
+                <label for="purpose">Loan Purpose</label>
+
+                <select id="purpose" name="purpose">
+                    <option value="">Select Purpose</option>
+                    <option>School Fees</option>
+                    <option>Medical</option>
+                    <option>Home Improvement</option>
+                    <option>Other</option>
+                </select>
+
+                <!-- Declaration -->
+                <div class="declaration">
+
+                    <input type="checkbox" id="declaration"
+                           name="declaration" required>
+
+                    <label for="declaration">
+                        I confirm that the information provided is accurate.
+                    </label>
+
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">
+                    Submit Application
+                </button>
+
+            </fieldset>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Stanbic Bank Uganda. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

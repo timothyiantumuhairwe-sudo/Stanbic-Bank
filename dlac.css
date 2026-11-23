@@ -1,0 +1,248 @@
+
+/* GENERAL STYLING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: #002D62;
+    color: white;
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 26px;
+}
+
+/* NAVIGATION */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #C9A63A;
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background: rgba(0, 45, 98, 0.7);
+    padding: 25px;
+    width: 80%;
+}
+
+.hero-text h2 {
+    font-size: 32px;
+}
+
+/* SECTION TITLES */
+.section-title {
+    text-align: center;
+    margin: 35px 0 20px;
+    color: #002D62;
+}
+
+/* LOAN CARDS */
+.loan-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px 40px;
+}
+
+.loan-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    flex: 1;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.loan-card h3 {
+    color: #002D62;
+    margin-bottom: 15px;
+}
+
+.loan-card p {
+    margin-bottom: 25px;
+}
+
+/* APPLY BUTTON */
+.apply-btn {
+    display: inline-block;
+    background: #002D62;
+    color: #C9A63A;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.apply-btn:hover {
+    background: #C9A63A;
+    color: #002D62;
+}
+
+/* COMPARISON TABLE */
+table {
+    width: 90%;
+    margin: 20px auto 40px;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background: #002D62;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+/* APPLICATION FORM */
+.form-container {
+    width: 70%;
+    max-width: 750px;
+    margin: 40px auto;
+}
+
+fieldset {
+    background: white;
+    border: 2px solid #002D62;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+legend {
+    color: #002D62;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input:not([type="checkbox"]),
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.declaration {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.declaration input {
+    width: auto;
+}
+
+.declaration label {
+    margin-top: 0;
+    font-weight: normal;
+}
+
+/* SUBMIT BUTTON */
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: #002D62;
+    color: #C9A63A;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #001D40;
+}
+
+/* FOOTER */
+footer {
+    background: #002D62;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .loan-container {
+        flex-direction: column;
+    }
+
+    .form-container {
+        width: 95%;
+    }
+
+    .hero-text h2 {
+        font-size: 22px;
+    }
+}
